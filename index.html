@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="text">My name is Hasan</h2>
+
+<input id="name">
+
+<button onclick="changeMe()">Click here!</button>
+<button onclick="clickme()">Click Me!</button>
+
+<script>
+
+function changeMe(){
+    document.getElementById("text").innerText = "Hello Hasan";
+}
+
+function clickme(){
+    let name = document.getElementById("name").value;
+    document.getElementById("text").innerText = "Welcome";
+}
+
+</script>
+</body>
+</html>

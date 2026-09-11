@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Practice</title>
+</head>
+
+<body>
+
+    <h2 id="text">My name is Hasan</h2>
+
+    <input id="name">
+
+    <button onclick="changeMe()">Click here!</button>
+    <button onclick="clickme()">Click Me!</button>
+
+    <script>
+
+        function changeMe() {
+            let text = document.querySelector("#text");
+            text.innerText = "Hello Hasan";
+        }
+
+        function clickme() {
+            let name = document.getElementById("name").value;
+            document.getElementById("text").innerText = "Welcome " + name;
+        }
+
+    </script>
+
+</body>
+</html>
